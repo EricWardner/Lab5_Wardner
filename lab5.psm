@@ -1,4 +1,4 @@
-		   00	   7	LDAI	0		N	1	N
+		   00	   7	LDAI	0	 Loads an initial number to accumulator and stores it in memory	N	1	N
 		   01	   0				Y	0	N
 		   02	   D	STA	1's		N	2	N
 		   03	   0				Y	0	N
@@ -11,7 +11,7 @@
 		   0A	   0	NOP			N	0	N
 		   0B	   0	NOP			N	0	N
 		   0C	   0	NOP			N	0	N
-	return	   0D	   F	LDAD	1's		N	2	N
+	return	   0D	   F	LDAD	1's	  Outputs number from memory to port 2	N	2	N
 		   0E	   0				Y	0	N
 		   0F	   B				Y	0	N
 		   10	   4	OUT	2		N	1	N
@@ -21,19 +21,19 @@
 		   14	   B				Y	0	N
 		   15	   4	OUT	1		N	1	N
 		   16	   1				Y	0	N
-		   17	   0	NOP			N	0	N
+		   17	   0	NOP		  Checks input for positive or negative	N	0	N
 		   18	   5	IN	0		N	1	N
 		   19	   0				Y	0	N
 		   1A	   B	JN	1's dec		N	2	N
 		   1B	   D				Y	0	N
 		   1C	   4				Y	0	N
-		   1D	   9	JMP	1's adder		N	2	N
+		   1D	   9	JMP	1's adder 		N	2	N
 		   1E	   3				Y	0	N
 		   1F	   2				Y	0	N
 		   20	   0	NOP			N	0	N
 		   21	   0	NOP			N	0	N
 		   22	   0	NOP			N	0	N
-	1's adder	   23	   F	LDAD	1's		N	2	N
+	1's adder  23	   F	LDAD	1's	 Increments the 1's place	N	2	N
 		   24	   0				Y	0	N
 		   25	   B				Y	0	N
 		   26	   6	ADDI	1		N	1	N
@@ -51,7 +51,7 @@
 		   32	   0				Y	0	N
 		   33	   0	NOP			N	0	N
 		   34	   0	NOP			N	0	N
-	10's adder	   35	   7	LDAI	0		N	1	N
+	10's adder 35	   7	LDAI	0       Increments 10's place		N	1	N
 		   36	   0				Y	0	N
 		   37	   D	STA	1's		N	2	N
 		   38	   0				Y	0	N
@@ -75,7 +75,7 @@
 		   4A	   0	NOP			N	0	N
 		   4B	   0	NOP			N	0	N
 		   4C	   0	NOP			N	0	N
-	1's dec	   4D	   F	LDAD	1's		N	2	N
+	1's dec	   4D	   F	LDAD	1's	Decrements 1's place	N	2	N
 		   4E	   0				Y	0	N
 		   4F	   B				Y	0	N
 		   50	   6	ADDI	F		N	1	N
@@ -90,8 +90,8 @@
 		   59	   D				Y	0	N
 		   5A	   0				Y	0	N
 		   5B	   0	NOP			N	0	N
-	10's dec	   5C	   4	OUT	2		N	1	N
-		   5D	   2				Y	0	N
+	10's dec   5C	   4	OUT	2		N	1	N
+		   5D	   2			Decremtnts 10's place	Y	0	N
 		   5E	   7	LDAI	9		N	1	N
 		   5F	   9				Y	0	N
 		   60	   D	STA	1's		N	2	N
@@ -114,7 +114,7 @@
 		   71	   D				Y	0	N
 		   72	   0				Y	0	N
 		   73	   0	NOP			N	0	N
-	00 reset	   74	   7	LDAI	0		N	1	N
+	00 reset   74	   7	LDAI	0	resets number to 00 if needed	N	1	N
 		   75	   0				Y	0	N
 		   76	   D	STA	1's		N	2	N
 		   77	   0				Y	0	N
@@ -125,7 +125,7 @@
 		   7C	   9	JMP	return		N	2	N
 		   7D	   D				Y	0	N
 		   7E	   0				Y	0	N
-	99 reset	   7F	   7	LDAI	9		N	1	N
+	99 reset   7F	   7	LDAI	9	resets number to 99 if needed	N	1	N
 		   80	   9				Y	0	N
 		   81	   D	STA	1's		N	2	N
 		   82	   0				Y	0	N
