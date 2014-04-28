@@ -47,8 +47,8 @@ The implementation of this flowchart was straght-forward difficulty came in chec
 
 **2.	The current state is Decode LoAddr and the IR contains “OUT.”  What are the control signals are asserted, and what will the next state be?**
 
-  Signals Asserted: MARLoLd, PCLd, R_W, IOSel_L
-  Next State: Direct IO Excecute
+  ``Signals Asserted: MARLoLd, PCLd, R_W, IOSel_L
+  Next State: Direct IO Excecute``
 
 **3.	What are the three status signals sent from the PRISM datapath to the PRISM controller?**
 
