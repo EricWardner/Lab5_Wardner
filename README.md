@@ -46,14 +46,18 @@ The implementation of this flowchart was straght-forward difficulty came in chec
     
 
 **2.	The current state is Decode LoAddr and the IR contains “OUT.”  What are the control signals are asserted, and what will the next state be?**
+
   Signals Asserted: MARLoLd, PCLd, R_W, IOSel_L
   Next State: Direct IO Excecute
 
 **3.	What are the three status signals sent from the PRISM datapath to the PRISM controller?**
+
     IRLd, PCLd, JumpSel
 
 **4.	Why is it important that ACCLd signal be active during the execute state for the ADDI instruction?**
+
     So that the result is loaded into the Accumulator on the next clock cycle 
 
 **5.	What changes are necessary to the PRISM datapath to add another instruction (SUBI, which would subtract an immediate value from the accumulator) to the instruction set?**
+
     Nothing would be changed, the change would have to occur in the ALU. 
