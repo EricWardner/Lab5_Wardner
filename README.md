@@ -62,4 +62,4 @@ The implementation of this flowchart was straght-forward difficulty came in chec
 
 **5.	What changes are necessary to the PRISM datapath to add another instruction (SUBI, which would subtract an immediate value from the accumulator) to the instruction set?**
 
-    Nothing would be changed, the change would have to occur in the ALU. 
+    Another bit would have to be added so that the ALU's mux can account for the new instruction. 
