@@ -34,3 +34,22 @@ First a flowchart was created to visualize the flow of the program
 ![alt tag](https://raw.githubusercontent.com/EricWardner/Lab5_Wardner/master/Flowchart.png)
 
 The implementation of this flowchart was straght-forward difficulty came in checking when the value was above 9, this was done by adding 6 to the accumulator and jumping if zero. More dificulty came when implementing on the FPGA, the clock had to be changed from 22 to 16 in order for it to run fast enough.
+
+####Questions
+**1.	When the controller’s current state is “FETCH,” what is the status of the following control lines:**
+    **a. PCLd:** '1'
+    **b. IRLd:** '1'
+    **c. ACCLd:** '0'
+
+**2.	The current state is Decode LoAddr and the IR contains “OUT.”  What are the control signals are asserted, and what will the next state be?**
+  Signals Asserted: MARLoLd, PCLd, R_W, IOSel_L
+  Next State: Direct IO Excecute
+
+**3.	What are the three status signals sent from the PRISM datapath to the PRISM controller?**
+    IRLd, PCLd, JumpSel
+
+**4.	Why is it important that ACCLd signal be active during the execute state for the ADDI instruction?**
+    So that the result is loaded into the Accumulator on the next clock cycle 
+
+**5.	What changes are necessary to the PRISM datapath to add another instruction (SUBI, which would subtract an immediate value from the accumulator) to the instruction set?**
+    Nothing would be changed, the change would have to occur in the ALU. 
