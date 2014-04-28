@@ -1,6 +1,6 @@
 Lab5_Wardner
 ============
-The purpose of this lab was to integrate all of the components of PRISM archetecture onan FPGA then create and run an assembly program on it.
+The purpose of this lab was to integrate all of the components of PRISM archetecture on an FPGA then create and run an assembly program on it.
 
 ####Functionality
 #####1st Program
@@ -31,6 +31,6 @@ The given file was a wavform of a program that loads 8 to the accumulator and in
 The objective of the second program was to implement an icrementer/decrementer based on input that loops between 00 and 99.
 
 First a flowchart was created to visualize the flow of the program
-![alt tag](https://raw.githubusercontent.com/EricWardner/Lab5_Wardner/master/Flowchart.PNG)
+![alt tag](https://raw.githubusercontent.com/EricWardner/Lab5_Wardner/master/Flowchart.png)
 
-The implementation of this flowchart was straght-forward. The dificulty came when implementing on the FPGA, the clock had to be changed from 22 to 16 in order for it to run fast enough.
+The implementation of this flowchart was straght-forward difficulty came in checking when the value was above 9, this was done by adding 6 to the accumulator and jumping if zero. More dificulty came when implementing on the FPGA, the clock had to be changed from 22 to 16 in order for it to run fast enough.
