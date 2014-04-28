@@ -37,9 +37,13 @@ The implementation of this flowchart was straght-forward difficulty came in chec
 
 ####Questions
 **1.	When the controller’s current state is “FETCH,” what is the status of the following control lines:**
+
     **a. PCLd:** '1'
+    
     **b. IRLd:** '1'
+    
     **c. ACCLd:** '0'
+    
 
 **2.	The current state is Decode LoAddr and the IR contains “OUT.”  What are the control signals are asserted, and what will the next state be?**
   Signals Asserted: MARLoLd, PCLd, R_W, IOSel_L
