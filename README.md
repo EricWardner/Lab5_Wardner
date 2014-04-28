@@ -47,6 +47,7 @@ The implementation of this flowchart was straght-forward difficulty came in chec
 
   ``
   Signals Asserted: MARLoLd, PCLd, R_W, IOSel_L
+  
   Next State: Direct IO Excecute
   ``
 
